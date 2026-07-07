@@ -1,0 +1,17 @@
+{
+  "name": "typescript-boilerplate-monorepo",
+  "private": true,
+  "workspaces": [
+    "domain",
+    "server",
+    "worker"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "dev:server": "npm run dev -w server",
+    "start:worker": "npm run start -w worker"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.3"
+  }
+}
